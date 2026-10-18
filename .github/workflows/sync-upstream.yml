@@ -20,7 +20,8 @@ on:
   # 当仓库有push时也运行
   push:
     branches: [ master ]
-
+permissions:
+  contents: write
 jobs:
   sync:
     runs-on: ubuntu-latest
